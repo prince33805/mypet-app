@@ -32,7 +32,7 @@ const LoginForm = () => {
     // Username validation
     if (username.length < 3) {
       // setError("Username must be at least 2 characters long.");
-      validationError = "Username must be at least 2 characters long.";
+      validationError = "Username must be at least 3 characters long.";
     } else if (username.length > 10) {
       setError("Username must not exceed 10 characters.");
       validationError = "Username must not exceed 10 characters.";
