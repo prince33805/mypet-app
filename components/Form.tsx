@@ -83,7 +83,7 @@ const Form = () => {
             <h1 className="form-header">Pet Hospital Registration</h1>
             <form onSubmit={handleSubmit} className="form">
                 <div>
-                    <label className="form-label">Owner Name</label>
+                    <label className="form-label">Owner Name *</label>
                     <input
                         type="text"
                         name="ownerName"
@@ -94,7 +94,7 @@ const Form = () => {
                     {errors.ownerName && <p className="form-error">{errors.ownerName}</p>}
                 </div>
                 <div>
-                    <label className="form-label">Pet Name</label>
+                    <label className="form-label">Pet Name *</label>
                     <input
                         type="text"
                         name="petName"
@@ -105,7 +105,7 @@ const Form = () => {
                     {errors.petName && <p className="form-error">{errors.petName}</p>}
                 </div>
                 <div>
-                    <label className="form-label">Date of Birth</label>
+                    <label className="form-label">Date of Birth *</label>
                     <input
                         type="date"
                         name="dateOfBirth"
@@ -116,7 +116,7 @@ const Form = () => {
                     {errors.dateOfBirth && <p className="form-error">{errors.dateOfBirth}</p>}
                 </div>
                 <div>
-                    <label className="form-label">Weight (kg)</label>
+                    <label className="form-label">Weight (kg) *</label>
                     <input
                         type="number"
                         name="weight"
@@ -137,7 +137,7 @@ const Form = () => {
                     ></textarea>
                 </div>
                 <div>
-                    <label className="form-label">Contact Number</label>
+                    <label className="form-label">Contact Number *</label>
                     <input
                         type="text"
                         name="contactNumber"
@@ -148,7 +148,7 @@ const Form = () => {
                     {errors.contactNumber && <p className="form-error">{errors.contactNumber}</p>}
                 </div>
                 <div>
-                    <label className="form-label">Pet Photo</label>
+                    <label className="form-label">Pet Photo *</label>
                     <input
                         type="file"
                         name="petPhoto"
