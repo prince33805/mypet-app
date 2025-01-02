@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles for the Form */
+.form-container {
+  @apply max-w-lg mx-auto mt-10 p-6 bg-white shadow-md rounded-lg;
+}
+
+.form-header {
+  @apply text-2xl font-bold text-center text-blue-600 mb-6;
+}
+
+.form {
+  @apply flex flex-col space-y-4;
+}
+
+.form-label {
+  @apply block font-medium text-gray-700;
+}
+
+.form-input {
+  @apply mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.form-error {
+  @apply text-sm text-red-500 mt-1;
+}
+
+.form-button {
+  @apply w-full py-2 px-4 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition;
+}
+
+/* Navbar Styles */
+.navbar {
+  @apply max-w-[1440px] mx-auto flex justify-between items-center p-4 bg-white;
+}
+
+.navbar-links {
+  @apply flex space-x-4;
+}
+
+.link {
+  @apply px-4 py-2 text-white rounded hover:opacity-90 transition-opacity;
+}
+
+.dashboard-link {
+  @apply bg-green-600 hover:bg-green-500;
+}
+
+.add-link {
+  @apply bg-blue-600 hover:bg-blue-500;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  @apply max-w-[1440px] mx-auto p-6;
+}
+
+.dashboard-header {
+  @apply text-3xl font-bold text-center mb-6;
+}
+
+.dashboard-table {
+  @apply table-auto w-full border-collapse border border-gray-200 text-left;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  @apply border px-4 py-2 w-32;
+}
+
+.dashboard-table tbody tr:hover {
+  @apply bg-gray-100;
+}
+
+.dashboard-button-show {
+  @apply px-4 py-2 mx-2 bg-blue-500 text-white rounded hover:bg-blue-400 transition;
+}
+
+.dashboard-button-edit {
+  @apply px-4 py-2 mx-2 bg-yellow-500 text-white rounded hover:bg-yellow-400 transition;
+}
+
+.dashboard-button-delete {
+  @apply px-4 py-2 mx-2 bg-red-500 text-white rounded hover:bg-red-400 transition;
+}
+
+/* Popup Styles */
+.popup-overlay {
+  @apply fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center;
+}
+
+.popup-container {
+  @apply bg-white p-6 shadow-md rounded-lg w-[64rem];
+}
+
+.popup-container-delete {
+  @apply bg-white p-6 shadow-md rounded-lg w-[32rem];
+}
+
+.popup-header {
+  @apply text-2xl font-bold text-center mb-4;
+}
+
+.popup-header-delete {
+  @apply text-2xl font-bold text-center mb-16;
+}
+
+.popup-form {
+  @apply flex flex-col space-y-4 w-96;
+}
+
+.popup-form label {
+  @apply block font-medium text-gray-700;
+}
+
+.popup-form input,
+.popup-form textarea {
+  @apply mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.popup-actions {
+  @apply flex items-center justify-between space-x-2;
+}
+
+.popup-actions-delete {
+  @apply flex items-center justify-between space-x-2;
+}
+
+.save {
+  @apply px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition;
+}
+.delete {
+  @apply px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition;
+}
+.close {
+  @apply ml-auto px-4 py-2 bg-gray-300 text-white rounded hover:bg-gray-400 transition;
+}
